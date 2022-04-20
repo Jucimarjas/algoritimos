@@ -16,28 +16,26 @@ Inicio
     escreva("Quantos elementos vai ter o vetor? ")
     leia(n)
     
-    escreval
-    
     cont <- 0
     media <- 0
     soma <- 0
     para i de 0 ate n-1 faca
          escreva("Digite um numero: ")
          leia(vet[i])
-         se vet[i] % 2 = 0 entao
-             cont <- cont + 1
-             soma <- soma + vet[i]
-         fimse
-             
     fimpara
     
-    escreval
-    media <- soma / cont
+    para i de 0 ate n-1 faca
+         se vet[2] % 2 = 0 entao
+            soma <- soma + vet[i]
+            cont <- cont + 1
+         fimse
+    fimpara                                        l
     
-    escreva("MEDIA DOS PARES = ", media:2:1)
-    
+    se cont = 0 entao
+       escreval("NENHUM NUMERO PAR")
+    senao
+       media <- soma / cont
+       escreval("MEDIA DOS PARES = ", media:3:1)
+    fimse
          
-
-
-
 Fimalgoritmo
